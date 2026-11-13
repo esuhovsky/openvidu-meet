@@ -1,0 +1,19 @@
+// IQX-Talk candidate brand layer (DEV only).
+// Scoped to the meeting app. The AI4-IQX locked GUI shell is not changed.
+// Actual approved icon artwork and DOTTIE image are NOT included in this commit.
+// A verified shared token package can override these CSS variables at runtime.
+:root {
+  --iqx-bg: #081c3d;
+  --iqx-panel: #103764;
+  --iqx-blue: #147dcb;
+  --iqx-text: #eff8ff;
+  --iqx-muted: #bcd0e8;
+  --iqx-line: #477eac;
+  --iqx-radius: 18px;
+}
+body#body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+// Only change documented existing OpenVidu theme variables where applicable.
+// Do not paint over buttons or icons because media controls must preserve accessibility.
+// Follow up with visual snapshots in the isolated DEV deployment before promoting CSS.

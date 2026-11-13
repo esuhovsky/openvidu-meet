@@ -7,6 +7,8 @@
 @include meta.load-css('_animations.scss');
 // Inline shared utility classes in the main app stylesheet.
 @include meta.load-css('_utilities.scss');
+// IQX-Talk visual overrides are isolated in a separate file; original OpenVidu styles remain intact.
+@include meta.load-css('iqx-brand.scss');
 
 // Apply the shared runtime theme to the document root and its dark-mode variant.
 @include runtime-theme.emit-runtime-theme('html', "html[data-theme='dark']");
